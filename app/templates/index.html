@@ -1,0 +1,29 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="text-center">
+    <h1 class="display-4">📋 Sistema de Tareas y Miembros</h1>
+    <p class="lead">CRUD completo con Flask, SQLAlchemy y Bootstrap</p>
+    <hr>
+    <div class="row mt-5">
+        <div class="col-md-6">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">✅ Tareas</h5>
+                    <p class="card-text">Gestionar tareas (crear, editar, eliminar)</p>
+                    <a href="/tareas" class="btn btn-primary">Ir a Tareas</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">👥 Miembros</h5>
+                    <p class="card-text">Gestionar miembros (crear, editar, eliminar)</p>
+                    <a href="/miembros" class="btn btn-primary">Ir a Miembros</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

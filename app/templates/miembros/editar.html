@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h2>✏️ Editar Miembro</h2>
+<form method="POST">
+    <div class="mb-3">
+        <label>Nombre:</label>
+        <input type="text" name="nombre" value="{{ miembro.nombre }}" class="form-control" required>
+    </div>
+    <div class="mb-3">
+        <label>Email:</label>
+        <input type="email" name="email" value="{{ miembro.email or '' }}" class="form-control">
+    </div>
+    <button type="submit" class="btn btn-primary">💾 Guardar</button>
+    <a href="/miembros" class="btn btn-secondary">Cancelar</a>
+</form>
+{% endblock %}

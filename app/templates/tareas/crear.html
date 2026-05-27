@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h2>➕ Crear Tarea</h2>
+<form method="POST">
+    <div class="mb-3">
+        <label>Descripción:</label>
+        <input type="text" name="descripcion" class="form-control" required>
+    </div>
+    <div class="mb-3 form-check">
+        <input type="checkbox" name="completado" class="form-check-input">
+        <label class="form-check-label">Completado</label>
+    </div>
+    <button type="submit" class="btn btn-success">💾 Guardar</button>
+    <a href="/tareas" class="btn btn-secondary">Cancelar</a>
+</form>
+{% endblock %}
